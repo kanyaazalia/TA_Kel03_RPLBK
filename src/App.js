@@ -2,7 +2,7 @@
 import { BrowserRouter, Route, NavLink, Routes } from "react-router-dom";
 
 // Icon Footer/Menu
-import { AiFillCar } from "react-icons/ai";
+import { AiFillAlert, AiFillAmazonCircle, AiFillCar } from "react-icons/ai";
 import { BsFillPersonFill } from "react-icons/bs";
 
 // Pages
@@ -21,10 +21,19 @@ function App() {
         </div>
       </header>
       <Routes>
+          {/* <Route path="/" element={<HomePage />}/> */}
           <Route path="/" element={<AboutPage />}/>
           <Route path="/products" element={<ProductsPage />}/>
       </Routes>
       <footer>
+        <NavLink to="/" className="iconWrapper">
+          <AiFillAlert className="icon" />
+          Home Page
+        </NavLink>
+        <NavLink to="/" className="iconWrapper">
+          <AiFillAmazonCircle className="icon" />
+          Meme
+        </NavLink>
         <NavLink to="/" className="iconWrapper">
           <BsFillPersonFill className="icon" />
           About
