@@ -22,7 +22,6 @@ import {
           title: title,
           description: description,
           price: price,
-          thumbnail: 'https://i.kym-cdn.com/entries/icons/original/000/038/456/christmas_who_wide.png',
           category: 'automotive'
         })
         .then((res) => {

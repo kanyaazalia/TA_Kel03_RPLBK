@@ -7,6 +7,7 @@ import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import { List, Paper, Typography, IconButton } from "@mui/material";
 import ProductsCard from "../components/ProductsCard.js";
+import NewProductsCard from "../components/NewProductsCard.js";
 
 import { AddCircle } from "@mui/icons-material";
 import AddProductsDialog from "../components/AddProductsDialog.js";
@@ -87,12 +88,11 @@ function Products() {
                 />
               ))}
               {newProducts.map((d, idx) => (
-                <ProductsCard
+                <NewProductsCard
                 key={d.id}
                 title={d.title}
                 description={d.description}
                 price={`${d.price}`}
-                onDelete={() => handleDeleteProducts(d.id, idx)}
                 />
               ))}
             </List>
@@ -102,7 +102,7 @@ function Products() {
           <AddProductsDialog
             open={isDialogOpen}
             onClose={closeDialog}
-            Products={newProducts}
+            products={newProducts}
             setProducts={setNewProducts}
           />
         )}
