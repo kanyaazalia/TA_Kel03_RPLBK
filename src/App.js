@@ -7,7 +7,7 @@ import { BsFillPersonFill } from "react-icons/bs";
 
 // Pages
 import ProductsPage from "./pages/Products";
-// import AboutPage from "./pages/About";
+import AboutPage from "./pages/About";
 
 // CSS
 import './App.css';
@@ -21,17 +21,17 @@ function App() {
         </div>
       </header>
       <Routes>
-          <Route path="/" element={<ProductsPage />}/>
-          {/* <Route path="/About" element={<AboutPage />}/> */}
+          <Route path="/" element={<AboutPage />}/>
+          <Route path="/products" element={<ProductsPage />}/>
       </Routes>
       <footer>
         <NavLink to="/" className="iconWrapper">
-          <AiFillCar className="icon" />
-          Products
-        </NavLink>
-        <NavLink to="/About" className="iconWrapper">
           <BsFillPersonFill className="icon" />
           About
+        </NavLink>
+        <NavLink to="/products" className="iconWrapper">
+          <AiFillCar className="icon" />
+          Products
         </NavLink>
       </footer>
     </BrowserRouter>

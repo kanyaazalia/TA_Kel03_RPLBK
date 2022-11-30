@@ -6,10 +6,10 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import { List, Paper, Typography, IconButton } from "@mui/material";
+import { AddCircle } from "@mui/icons-material";
+
 import ProductsCard from "../components/ProductsCard.js";
 import NewProductsCard from "../components/NewProductsCard.js";
-
-import { AddCircle } from "@mui/icons-material";
 import AddProductsDialog from "../components/AddProductsDialog.js";
 
 const BASE_API_URL = `https://dummyjson.com/products`;
@@ -69,7 +69,7 @@ function Products() {
       <div className="productsList">
         <div className="list-container">
           <div className="list-title-wrapper">
-            <Typography variant="h4">Products</Typography>
+            <Typography variant="h4" className='list-title'>Products</Typography>
             <IconButton onClick={openDialog}>
             <AddCircle />
             </IconButton>
