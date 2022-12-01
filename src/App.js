@@ -9,6 +9,7 @@ import { BsFillPersonFill } from "react-icons/bs";
 import ProductsPage from "./pages/Products";
 import AboutPage from "./pages/About";
 import Meme from "./pages/Meme"
+import AnggotaPage from './pages/Anggota.js';
 
 // CSS
 import './App.css';
@@ -25,6 +26,7 @@ function App() {
           {/* <Route path="/" element={<HomePage />}/> */}
           <Route path="/about" element={<AboutPage />}/>
           <Route path="/products" element={<ProductsPage />}/>
+          <Route path="/about/anggota" element={<AnggotaPage />}/>
           <Route path="/meme" element={<Meme />}/>
       </Routes>
       <footer>
