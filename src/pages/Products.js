@@ -18,6 +18,7 @@ function Products() {
     const [products, setProducts] = useState([]);
     const [newProducts, setNewProducts] = useState([]);
     const [isDialogOpen, setIsDialogOpen] = useState(false);
+    const [searchTitle, setSearchTitle] = useState("");
   
     useEffect(() => {
       async function getProducts() {
@@ -70,6 +71,12 @@ function Products() {
         <div className="list-container">
           <div className="list-title-wrapper">
             <Typography variant="h4" className='list-title'>Products</Typography>
+              <input
+              style={{ width: "30%", height: "25px" }}
+              type="text"
+              placeholder="Search..."
+              onChange={(e) => setSearchTitle(e.target.value)}
+              />
             <IconButton onClick={openDialog}>
             <AddCircle />
             </IconButton>
@@ -77,7 +84,16 @@ function Products() {
           
           <Paper elevation={2} style={{ maxHeight: "500px", overflow: "auto" }}>
             <List>
-              {products.map((d, idx) => (
+              {products.filter((value) => {
+                    if (searchTitle === "") {
+                      return value;
+                    } else if (
+                      value.title.toLowerCase().includes(searchTitle.toLowerCase())
+                    ) {
+                      return value;
+                    }
+                  })
+              .map((d, idx) => (
                 <ProductsCard
                   key={d.id}
                   thumbnail={d.thumbnail}
