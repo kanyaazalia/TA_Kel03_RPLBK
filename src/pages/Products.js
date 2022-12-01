@@ -80,10 +80,10 @@ function Products() {
               {products.map((d, idx) => (
                 <ProductsCard
                   key={d.id}
-                  thumbnail={`${d.thumbnail}`}
-                  title={`${d.title}`}
-                  description={`${d.description}`}
-                  price={`${d.price}`}
+                  thumbnail={d.thumbnail}
+                  title={d.title}
+                  description={d.description}
+                  price={d.price}
                   onDelete={() => handleDeleteProducts(d.id, idx)}
                 />
               ))}
