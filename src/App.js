@@ -8,6 +8,7 @@ import { BsFillPersonFill } from "react-icons/bs";
 // Pages
 import ProductsPage from "./pages/Products";
 import AboutPage from "./pages/About";
+import AnggotaPage from './pages/Anggota.js';
 
 // CSS
 import './App.css';
@@ -24,6 +25,7 @@ function App() {
           {/* <Route path="/" element={<HomePage />}/> */}
           <Route path="/about" element={<AboutPage />}/>
           <Route path="/products" element={<ProductsPage />}/>
+          <Route path="/about/anggota" element={<AnggotaPage />}/>
       </Routes>
       <footer>
         <NavLink to="/" className="iconWrapper">
