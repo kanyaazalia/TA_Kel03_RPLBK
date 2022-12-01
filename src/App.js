@@ -8,6 +8,7 @@ import { BsFillPersonFill } from "react-icons/bs";
 // Pages
 import ProductsPage from "./pages/Products";
 import AboutPage from "./pages/About";
+import Meme from "./pages/Meme"
 
 // CSS
 import './App.css';
@@ -24,13 +25,14 @@ function App() {
           {/* <Route path="/" element={<HomePage />}/> */}
           <Route path="/about" element={<AboutPage />}/>
           <Route path="/products" element={<ProductsPage />}/>
+          <Route path="/meme" element={<Meme />}/>
       </Routes>
       <footer>
         <NavLink to="/" className="iconWrapper">
           <AiFillAlert className="icon" />
           Home Page
         </NavLink>
-        <NavLink to="/" className="iconWrapper">
+        <NavLink to="/meme" className="iconWrapper">
           <AiFillAmazonCircle className="icon" />
           Meme
         </NavLink>
