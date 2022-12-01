@@ -92,7 +92,7 @@ function Products() {
                 key={d.id}
                 title={d.title}
                 description={d.description}
-                price={`${d.price}`}
+                price={d.price}
                 />
               ))}
             </List>
