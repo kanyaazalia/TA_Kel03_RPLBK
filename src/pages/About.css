@@ -9,7 +9,6 @@
 .icon-wrapper {
     border: solid black;
     border-radius: 15px;
-    width: fit-content;
     margin-top: 40px;
     display: flex;
     flex-direction: column;
