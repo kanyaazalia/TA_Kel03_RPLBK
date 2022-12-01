@@ -22,7 +22,7 @@ function App() {
       </header>
       <Routes>
           {/* <Route path="/" element={<HomePage />}/> */}
-          <Route path="/" element={<AboutPage />}/>
+          <Route path="/about" element={<AboutPage />}/>
           <Route path="/products" element={<ProductsPage />}/>
       </Routes>
       <footer>
@@ -34,13 +34,13 @@ function App() {
           <AiFillAmazonCircle className="icon" />
           Meme
         </NavLink>
-        <NavLink to="/" className="iconWrapper">
-          <BsFillPersonFill className="icon" />
-          About
-        </NavLink>
         <NavLink to="/products" className="iconWrapper">
           <AiFillCar className="icon" />
           Products
+        </NavLink>
+        <NavLink to="/about" className="iconWrapper">
+          <BsFillPersonFill className="icon" />
+          About
         </NavLink>
       </footer>
     </BrowserRouter>
