@@ -23,7 +23,7 @@ function About() {
 
             <NavLink to="/about/anggota" className="icon-wrapper">
                 <RiTeamFill className="icon-anggota" />
-                Anggota Kelompok
+                Anggota Kelompok 3
             </NavLink>
         </div>
     );
