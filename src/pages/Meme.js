@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Meme.css';
+import Clock from '../components/iniJam';
 
 function Dice() {
   const [firstDieResult, setFirstDieResult] = useState(1);
@@ -16,6 +17,8 @@ function Dice() {
   return (
     <div className="App">
       <header className="App-header">
+        <Clock/>
+        <h1>INI JUDUL</h1>
         <div style={{ display: 'flex', margin: 20 }}>
           <img src={firstDieImage} className="die" alt="Die one" />
           <img src={secondDieImage} className="die" alt="Die two" />

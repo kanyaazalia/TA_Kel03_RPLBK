@@ -30,7 +30,7 @@ function App() {
           <Route path="/meme" element={<Meme />}/>
       </Routes>
       <footer>
-        <NavLink to="/" className="iconWrapper">
+        <NavLink to="/about/anggota" className="iconWrapper">
           <AiFillAlert className="icon" />
           Home Page
         </NavLink>

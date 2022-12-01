@@ -6,12 +6,15 @@ import "@fontsource/roboto/700.css";
 import { RiTeamFill } from "react-icons/ri";
 
 import { Route, NavLink, Routes } from "react-router-dom";
-
+import Clock from '../components/iniJam';
 import AboutCard from '../components/Card.js'
 
 function About() {
     return (
         <div className='about-wrapper'>
+        <div>
+            <Clock/>
+        </div>
             <AboutCard
                 avatar={"https://png.pngtree.com/png-clipart/20190705/original/pngtree-vector-car-icon-png-image_4292542.jpg"}
                 title={"Tugas Akhir Kelompok 3"}
