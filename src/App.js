@@ -23,14 +23,14 @@ function App() {
         </div>
       </header>
       <Routes>
-          {/* <Route path="/" element={<HomePage />}/> */}
+          <Route path="/" element={<AnggotaPage />}/>
           <Route path="/about" element={<AboutPage />}/>
           <Route path="/products" element={<ProductsPage />}/>
           <Route path="/about/anggota" element={<AnggotaPage />}/>
           <Route path="/meme" element={<Meme />}/>
       </Routes>
       <footer>
-        <NavLink to="/about/anggota" className="iconWrapper">
+        <NavLink to="/" className="iconWrapper">
           <AiFillAlert className="icon" />
           Home Page
         </NavLink>

@@ -1,5 +1,10 @@
 .App {
     text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   
   .App-header {
@@ -16,7 +21,27 @@
     height: 50px;
     margin: 10px;
   }
+
+  .button {
+    margin-top: 15px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 13px;
+    border: solid black;
+    border-radius: 15px;
+    background-color: white;
+  }
+
+  .dice-result {
+    color: black;
+    font-family: 'Segoe UI';
+    font-weight: 550;
+    font-size: 20px;
+  }
   
   .button:hover {
-    box-shadow: 0 2px 0 0 #5664a7;
+    box-shadow: 2px 2px 2px 0 #5664a7;
   }

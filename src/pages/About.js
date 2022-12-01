@@ -12,13 +12,13 @@ import AboutCard from '../components/Card.js'
 function About() {
     return (
         <div className='about-wrapper'>
-        <div>
+        <div className='clock'>
             <Clock/>
         </div>
             <AboutCard
                 avatar={"https://png.pngtree.com/png-clipart/20190705/original/pngtree-vector-car-icon-png-image_4292542.jpg"}
                 title={"Tugas Akhir Kelompok 3"}
-                body={"Berikut merupakan aplikasi yang dibuat oleh Kelompok 3 sebagai Tugas Akhir Praktikum RPLBK. Aplikasi ini dapat menampilkan, menambahkan, serta menghapus data katalog produk aksesori automotif melalui API. (dll isi disini ya gaes bisa apa aja)"}
+                body={"Berikut merupakan aplikasi yang dibuat oleh Kelompok 3 sebagai Tugas Akhir Praktikum RPLBK. Aplikasi ini dapat menampilkan, menambahkan, serta menghapus data katalog produk aksesori automotif melalui API. Aplikasi ini juga memiliki sebuah fitur untuk mengocok dua buah dadu."}
             />
 
             <NavLink to="/about/anggota" className="icon-wrapper">
