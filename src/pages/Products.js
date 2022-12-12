@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import './Products.css';
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
@@ -19,6 +19,7 @@ function Products() {
     const [newProducts, setNewProducts] = useState([]);
     const [isDialogOpen, setIsDialogOpen] = useState(false);
     const [searchTitle, setSearchTitle] = useState("");
+    const inputRef = useRef()
   
     useEffect(() => {
       async function getProducts() {
@@ -74,7 +75,7 @@ function Products() {
               <input
               style={{ width: "30%", height: "25px" }}
               type="text"
-              placeholder="Search..."
+              placeholder="Search..." ref={inputRef}
               onChange={(e) => setSearchTitle(e.target.value)}
               />
             <IconButton onClick={openDialog}>
@@ -88,7 +89,7 @@ function Products() {
                     if (searchTitle === "") {
                       return value;
                     } else if (
-                      value.title.toLowerCase().includes(searchTitle.toLowerCase())
+                      value.title.toLowerCase().includes(inputRef.current.value.toLowerCase())
                     ) {
                       return value;
                     }

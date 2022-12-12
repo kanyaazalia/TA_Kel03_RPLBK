@@ -4,6 +4,8 @@ import { BrowserRouter, Route, NavLink, Routes } from "react-router-dom";
 // Icon Footer/Menu
 import { AiFillAlert, AiFillAmazonCircle, AiFillCar } from "react-icons/ai";
 import { BsFillPersonFill } from "react-icons/bs";
+import { FaHome } from "react-icons/fa"
+import { RiEmotionLaughFill } from "react-icons/ri"
 
 // Pages
 import ProductsPage from "./pages/Products";
@@ -31,11 +33,11 @@ function App() {
       </Routes>
       <footer>
         <NavLink to="/" className="iconWrapper">
-          <AiFillAlert className="icon" />
+          <FaHome className="icon" />
           Home Page
         </NavLink>
         <NavLink to="/meme" className="iconWrapper">
-          <AiFillAmazonCircle className="icon" />
+          <RiEmotionLaughFill className="icon" />
           Meme
         </NavLink>
         <NavLink to="/products" className="iconWrapper">
